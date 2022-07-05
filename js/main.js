@@ -6,3 +6,14 @@ Array.from(toggleMenu).forEach(icon => {
         menuMobile.classList.toggle('show-menu')
     })
 })
+
+let controls = document.getElementsByClassName('controls')
+Array.from(controls).forEach(control => {
+    Array.from(control.children).forEach(icon => {
+        icon.addEventListener('click', e => {
+            e.target.parentNode.nextElementSibling.classList.toggle('active')
+            e.target.classList.toggle('open')
+            e.target.classList.toggle('close')
+        })
+    })
+})
