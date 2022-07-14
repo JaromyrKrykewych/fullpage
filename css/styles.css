@@ -1065,9 +1065,9 @@ body {
         align-items: center;
         border-bottom: none; }
         .faq-quotes div div .open {
-          content: url("../icons/open-faq.png");
-          width: 7px;
-          height: 4px;
+          content: url("../icons/angle-down-fp.svg");
+          width: 17px;
+          height: auto;
           cursor: pointer; }
         .faq-quotes div div .close {
           content: url("../icons/close-faq.png");
