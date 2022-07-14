@@ -1273,15 +1273,15 @@ body {
       }
       div {
         align-self: center;
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-bottom: none;
         .open{
           content:url("../icons/angle-down-fp.svg");
-          width: 17px;
+          width: 24px;
           height: auto;
           cursor: pointer;
         }

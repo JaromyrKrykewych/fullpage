@@ -1058,15 +1058,15 @@ body {
         color: #000000; }
       .faq-quotes div div {
         align-self: center;
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-bottom: none; }
         .faq-quotes div div .open {
           content: url("../icons/angle-down-fp.svg");
-          width: 17px;
+          width: 24px;
           height: auto;
           cursor: pointer; }
         .faq-quotes div div .close {
