@@ -967,9 +967,13 @@ body {
   padding-top: 90px;
   background: #F1F1F1;
   &-image {
-    background-image: url('../images/about-oval-image-sm.png');
+    background-image: url('../images/camping.jpg'); /* about-oval-image-sm.png */
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    border: 3px solid rgba(4, 122, 110, 0.62);
+    border-radius: 62%;
+    transform: rotate(-1.02deg);
     width: 268.92px;
     height: 210.86px;
     margin: 0 auto;
@@ -1274,11 +1278,18 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+        border-bottom: none;
         .open{
           content:url("../icons/open-faq.png");
+          width: 7px;
+          height: 4px;
+          cursor: pointer;
         }
         .close {
           content:url("../icons/close-faq.png");
+          width: 7px;
+          height: 1px;
+          cursor: pointer;
         }
       }
       p {
@@ -1955,6 +1966,9 @@ body {
     &-image {
       width: 524.35px;
       height: 411.14px;
+      border: 3px solid rgba(4, 122, 110, 0.62);
+      border-radius: 62%;
+      transform: rotate(-1.02deg);
     }
     &-text {
       padding-left: 60px;
@@ -2134,9 +2148,12 @@ body {
           padding: 0 15px;
           .open{
             content:url("../icons/open-faq-lg.png");
+            width: 17px;
+            height: auto;
           }
           .close {
-            width: 17px;
+            width: 15px;
+            height: auto;
           }
         }
         p {
