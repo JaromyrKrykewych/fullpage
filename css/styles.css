@@ -331,6 +331,8 @@ body {
         height: 11px;
         background: rgba(214, 116, 72, 0.5);
         border-radius: 50%; }
+      .brand-message-carousel .carousel-target .current {
+        background: #D67448; }
 
 .home-about {
   padding-top: 120px; }
@@ -403,6 +405,7 @@ body {
     max-width: 323px;
     height: 287px; }
     .home-proyects-carousel .carousel-controls {
+      z-index: 15;
       position: absolute;
       top: 120px;
       left: 0;
@@ -1330,7 +1333,8 @@ body {
           background-position: center center;
           background-repeat: no-repeat;
           margin-top: 80px;
-          opacity: 1; }
+          opacity: 1;
+          grid-column: 2/3; }
           .home-proyects-carousel .carousel-proyects .active h3 {
             width: 220px;
             margin: 0 auto;
@@ -1344,11 +1348,17 @@ body {
           .home-proyects-carousel .carousel-proyects .active span {
             font-size: 16px;
             line-height: 19px; }
+        .home-proyects-carousel .carousel-proyects .first {
+          grid-column: 1/2; }
+        .home-proyects-carousel .carousel-proyects .third {
+          grid-column: 3/4; }
       .home-proyects-carousel .carousel-target {
+        z-index: 15;
         top: 460px;
         width: 123px;
         height: 13px; }
         .home-proyects-carousel .carousel-target .target {
+          z-index: 15;
           width: 13px;
           height: 13px;
           background: #D9D9D9; }

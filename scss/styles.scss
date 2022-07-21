@@ -399,6 +399,9 @@ body {
         background: rgba(214, 116, 72, 0.5);
         border-radius: 50%;
       }
+      .current {
+        background: #D67448;
+      }
     }
   }
 }
@@ -486,6 +489,7 @@ body {
     max-width: 323px;
     height: 287px;
     .carousel-controls {
+      z-index: 15;
       position: absolute;
       top: 120px;
       left: 0;
@@ -1632,6 +1636,7 @@ body {
           background-repeat: no-repeat;
           margin-top: 80px;
           opacity: 1;
+          grid-column: 2/3;
           h3 {
             width: 220px;
             margin: 0 auto;
@@ -1649,12 +1654,20 @@ body {
             line-height: 19px;
           }
         }
+        .first {
+          grid-column: 1/2;
+        }
+        .third {
+          grid-column: 3/4;
+        }
       }
       .carousel-target {
+        z-index: 15;
         top: 460px;
         width: 123px;
         height: 13px;
         .target {
+          z-index: 15;
           width: 13px;
           height: 13px;
           background: #D9D9D9;
