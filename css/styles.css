@@ -153,6 +153,7 @@ body {
               .header .menu-mobile .menu .menu-nav ul a li span {
                 display: block;
                 padding: 0 16px;
+                font-family: 'Inter';
                 font-family: 'SF UI Display';
                 font-style: normal;
                 font-weight: 600;
@@ -170,6 +171,7 @@ body {
         .header .menu-mobile .menu .menu-logout span {
           display: block;
           padding: 0 16px;
+          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 600;
@@ -199,6 +201,7 @@ body {
     .header-home .welcome-subtitle {
       padding-bottom: 13px; }
       .header-home .welcome-subtitle h4 {
+        font-family: 'Inter';
         font-family: 'SF UI Display';
         font-style: normal;
         font-weight: 500;
@@ -207,6 +210,7 @@ body {
     .header-home .welcome-text {
       padding: 13px 7% 0; }
       .header-home .welcome-text p {
+        font-family: 'Inter';
         font-family: 'SF UI Display';
         font-style: normal;
         font-weight: 300;
@@ -234,6 +238,7 @@ body {
       justify-content: center;
       align-items: center; }
       .brand-message-title .border-bg h2 {
+        font-family: 'Inter';
         font-family: 'SF UI Display';
         font-style: normal;
         font-weight: 500;
@@ -281,6 +286,7 @@ body {
         flex-direction: column;
         justify-content: space-between; }
         .brand-message-carousel .carousel-message .message-box h3 {
+          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 600;
@@ -290,6 +296,7 @@ body {
           text-transform: uppercase;
           text-align: center; }
         .brand-message-carousel .carousel-message .message-box p {
+          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 300;
@@ -307,6 +314,7 @@ body {
           justify-content: center;
           align-items: center;
           border: none;
+          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 500;
@@ -353,6 +361,7 @@ body {
     height: 185px;
     margin: 0 auto; }
     .home-about-info h3 {
+      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 500;
@@ -361,6 +370,7 @@ body {
       color: #000000;
       text-align: center; }
     .home-about-info p {
+      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 300;
@@ -377,6 +387,7 @@ body {
       justify-content: center;
       align-items: center;
       border: none;
+      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 500;
@@ -388,6 +399,7 @@ body {
 .home-proyects {
   margin-top: 110px; }
   .home-proyects-title h2 {
+    font-family: 'Inter';
     font-family: 'SF UI Display';
     font-style: normal;
     font-weight: 500;
@@ -431,6 +443,7 @@ body {
         flex-direction: column;
         justify-content: space-between; }
         .home-proyects-carousel .carousel-proyects .proyect-box h3 {
+          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 500;
@@ -439,6 +452,7 @@ body {
           color: #000000;
           text-align: center; }
         .home-proyects-carousel .carousel-proyects .proyect-box p {
+          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 300;
@@ -448,6 +462,7 @@ body {
           color: #535353; }
         .home-proyects-carousel .carousel-proyects .proyect-box span {
           display: block;
+          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 500;
@@ -489,6 +504,7 @@ body {
   .home-banner .banner-title {
     width: 90%; }
     .home-banner .banner-title h3 {
+      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 500;
@@ -500,6 +516,7 @@ body {
     width: 90%;
     padding-top: 50px; }
     .home-banner .banner-text p {
+      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 300;
@@ -511,6 +528,7 @@ body {
 .contact {
   margin-top: 55px; }
   .contact-form h3 {
+    font-family: 'Inter';
     font-family: 'SF UI Display';
     font-style: normal;
     font-weight: 500;
@@ -522,6 +540,7 @@ body {
   .contact-form h4 {
     width: 90%;
     margin: 15px auto;
+    font-family: 'Inter';
     font-family: 'SF UI Display';
     font-style: normal;
     font-weight: 300;
@@ -555,6 +574,7 @@ body {
     justify-content: center;
     align-items: center;
     border: none;
+    font-family: 'Inter';
     font-family: 'SF UI Display';
     font-style: normal;
     font-weight: 500;
@@ -1435,13 +1455,59 @@ body {
       transform: translateY(213px);
       grid-row: 1/2;
       grid-column: 1/2;
-      gap: 0; }
-      .contact-images img {
+      gap: 0;
+      position: relative;
+      display: block;
+      /* img {
         transform: rotate(24.76deg);
         width: 169px;
         height: 197px;
-        border-radius: 17px; }
+        border-radius: 17px;
+      } */ }
+      .contact-images > :nth-child(1) {
+        width: 198px;
+        position: absolute;
+        top: 300px;
+        left: -50px;
+        transform: rotate(24.76deg);
+        z-index: 8; }
+      .contact-images > :nth-child(2) {
+        width: 219px;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+        transform: rotate(24.76deg);
+        z-index: 9; }
+      .contact-images > :nth-child(3) {
+        width: 149px;
+        position: absolute;
+        top: 160px;
+        left: 350px;
+        transform: rotate(24.76deg);
+        z-index: 2; }
+      .contact-images > :nth-child(4) {
+        width: 165px;
+        position: absolute;
+        top: -70px;
+        left: 40px;
+        transform: rotate(24.76deg);
+        z-index: 6; }
+      .contact-images > :nth-child(5) {
+        width: 219px;
+        position: absolute;
+        top: 250px;
+        left: 150px;
+        transform: rotate(24.76deg);
+        z-index: 4; }
+      .contact-images > :nth-child(6) {
+        width: 191px;
+        position: absolute;
+        top: 20px;
+        left: 250px;
+        transform: rotate(24.76deg);
+        z-index: -1; }
   .footer {
+    z-index: 5px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
