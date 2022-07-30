@@ -188,7 +188,6 @@ body {
               span {
                 display: block;
                 padding: 0 16px;
-                font-family: 'Inter';
                 font-family: 'SF UI Display';
                 font-style: normal;
                 font-weight: 600;
@@ -212,7 +211,6 @@ body {
         span {
           display: block;
           padding: 0 16px;
-          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 600;
@@ -248,7 +246,6 @@ body {
     &-subtitle {
       padding-bottom: 13px;
       h4 {
-        font-family: 'Inter';
         font-family: 'SF UI Display';
         font-style: normal;
         font-weight: 500;
@@ -259,7 +256,6 @@ body {
     &-text {
       padding: 13px 7% 0;
       p {
-        font-family: 'Inter';
         font-family: 'SF UI Display';
         font-style: normal;
         font-weight: 300;
@@ -293,7 +289,6 @@ body {
       justify-content: center;
       align-items: center;
       h2 {
-        font-family: 'Inter';
         font-family: 'SF UI Display';
         font-style: normal;
         font-weight: 500;
@@ -346,7 +341,6 @@ body {
         flex-direction: column;
         justify-content: space-between;
         h3 {
-          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 600;
@@ -357,7 +351,6 @@ body {
           text-align: center;
         }
         p {
-          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 300;
@@ -377,7 +370,6 @@ body {
           align-items: center;
           border: none;
 
-          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 500;
@@ -436,7 +428,6 @@ body {
     height: 185px;
     margin: 0 auto;
     h3 {
-      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 500;
@@ -446,7 +437,6 @@ body {
       text-align: center;
     }
     p {
-      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 300;
@@ -465,7 +455,6 @@ body {
       align-items: center;
       border: none;
 
-      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 500;
@@ -481,7 +470,6 @@ body {
   margin-top: 110px;
   &-title {
     h2 {
-      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 500;
@@ -528,7 +516,6 @@ body {
         flex-direction: column;
         justify-content: space-between;
         h3 {
-          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 500;
@@ -538,7 +525,6 @@ body {
           text-align: center;
         }
         p {
-          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 300;
@@ -549,7 +535,6 @@ body {
         }
         span {
           display: block;
-          font-family: 'Inter';
           font-family: 'SF UI Display';
           font-style: normal;
           font-weight: 500;
@@ -601,7 +586,6 @@ body {
   .banner-title {
     width: 90%;
     h3 {
-      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 500;
@@ -615,7 +599,6 @@ body {
     width: 90%;
     padding-top: 50px;
     p {
-      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 300;
@@ -631,7 +614,6 @@ body {
   margin-top: 55px;
   &-form {
     h3 {
-      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 500;
@@ -644,7 +626,6 @@ body {
     h4 {
       width: 90%;
       margin: 15px auto;
-      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 300;
@@ -684,7 +665,6 @@ body {
       align-items: center;
       border: none;
 
-      font-family: 'Inter';
       font-family: 'SF UI Display';
       font-style: normal;
       font-weight: 500;
@@ -730,7 +710,11 @@ body {
     align-content: center;
     justify-items: center;
     gap: 10px;
+    .desktop {
+      display: none;
+    }
   }
+  
 }
 
 .footer {
@@ -1423,13 +1407,17 @@ body {
         align-items: center;
         a {
           text-decoration: none;
-          padding: 12px 40px 12px 0;
+          padding: 12px 0;
+          padding-right: 0;
+          transition: all ease 1s;
           li {
             list-style-type: none;
             padding: 0 20px;
             img {
+              opacity: 0;
               width: 20px;
               height: 20px;
+              transition: all ease 1s;
             }
           }
         }
@@ -1440,6 +1428,18 @@ body {
             img {
               width: 25px;
               height: 16px;
+            }
+          }
+        }
+      }
+    }
+    .social-media:hover {
+      ul {
+        a{
+          padding-right: 40px;
+          li {
+            img {
+              opacity: 1;
             }
           }
         }
@@ -1643,12 +1643,6 @@ body {
             line-height: 16px;
           }
         }
-        .proyect-box:first-child {
-          grid-column: 1/2;
-        }
-        .proyect-box:last-child {
-          grid-column: 3/4;
-        }
         .active {
           background-image: url('../images/home-proyects-bg-lg.png');
           background-size: cover;
@@ -1804,49 +1798,66 @@ body {
         width: 219px;
         position: absolute;
         top: 50px;
-        left: 10px;
+        left: 30px;
         transform: rotate(24.76deg);
         z-index: 9;
       }
       &>:nth-child(3) {
-        width: 149px;
+        width: 210px;
         position: absolute;
-        top: 160px;
-        left: 350px;
+        top: -130px;
+        left: -160px;
         transform: rotate(24.76deg);
         z-index: 2;
       }
       &>:nth-child(4) {
         width: 165px;
         position: absolute;
-        top: -70px;
-        left: 40px;
+        top: -110px;
+        left: 80px;
         transform: rotate(24.76deg);
         z-index: 6;
       }
       &>:nth-child(5) {
-        width: 219px;
+        width: 149px;
         position: absolute;
-        top: 250px;
-        left: 150px;
-        transform: rotate(24.76deg);
-        z-index: 4;
-      }
-      &>:nth-child(6) {
-        width: 191px;
-        position: absolute;
-        top: 20px;
+        top: 10px;
         left: 250px;
         transform: rotate(24.76deg);
+        z-index: 2;
+      }
+      &>:nth-child(6) {
+        width: 121px;
+        position: absolute;
+        top: 340px;
+        left: 410px;
+        transform: rotate(24.76deg);
+        z-index: 5;
+      }
+      &>:nth-child(7) {
+        display: block;
+        width: 269px;
+        position: absolute;
+        top: 165px;
+        left: 150px;
+        z-index: 5;
+      }
+      &>:nth-child(8) {
+        display: block;
+        width: 190px;
+        position: absolute;
+        top: 360px;
+        left: 190px;
         z-index: -1;
       }
-      
-      /* img {
-        transform: rotate(24.76deg);
-        width: 169px;
-        height: 197px;
-        border-radius: 17px;
-      } */
+      &>:nth-child(9) {
+        display: block;
+        width: 231px;
+        position: absolute;
+        top: 130px;
+        left: 300px;
+        z-index: 1;
+      }
     }
   }
 
